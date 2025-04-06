@@ -3,159 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding Invitation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f7f5;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-
-        header {
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #8e7cc3;
-            font-family: 'Playfair Display', serif;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: normal;
-            margin-bottom: 30px;
-            color: #b19cd9;
-        }
-
-        .names {
-            font-size: 2.2rem;
-            margin: 30px 0;
-            color: #8e7cc3;
-        }
-
-        .accent {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #b19cd9;
-        }
-
-        .details {
-            margin: 40px 0;
-            line-height: 2;
-        }
-
-        .date {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 15px 0;
-            color: #8e7cc3;
-        }
-
-        .location {
-            margin: 15px 0;
-            font-size: 1.3rem;
-        }
-
-        .rsvp {
-            margin: 40px 0 20px;
-            padding: 15px 30px;
-            background-color: #8e7cc3;
-            color: white;
-            display: inline-block;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s;
-        }
-
-        .rsvp:hover {
-            background-color: #6d5aa3;
-        }
-
-        .footer {
-            margin-top: 60px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        .hearts {
-            font-size: 2rem;
-            color: #b19cd9;
-            margin: 20px 0;
-        }
-
-        .divider {
-            width: 60%;
-            margin: 30px auto;
-            border-top: 1px solid #eee;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.4rem;
-            }
-
-            .names {
-                font-size: 1.8rem;
-            }
-        }
-
-        /* Add Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
-    </style>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>We're Getting Married</h1>
-        <div class="hearts">♥ ♥ ♥</div>
-        <h2>Please join us to celebrate our wedding</h2>
-    </header>
+<div id="passwordSection">
+    <h1>Wedding Invitation</h1>
+    <p>Please enter the password to view our invitation:</p>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button id="submitPassword">Submit</button>
+</div>
 
-    <div class="names">
-        <span class="accent">Marcus</span>
-        <span> & </span>
-        <span class="accent">Doris</span>
-    </div>
+<div class="invitation">
+    <div class="container">
+        <header>
+            <h1>We're Getting Married</h1>
+            <div class="hearts">♥ ♥ ♥</div>
+            <h2>Please join us to celebrate our wedding</h2>
+        </header>
 
-    <div class="divider"></div>
+        <div class="names">
+            <span class="accent">Name One</span>
+            <span> & </span>
+            <span class="accent">Name Two</span>
+        </div>
 
-    <div class="details">
-        <div class="date">Saturday, June 12, 2025 at 4:00 PM</div>
-        <div class="location">Beautiful Wedding Venue<br>123 Celebration Lane<br>Wedding City, WS 12345</div>
-        <p>Reception to follow</p>
-    </div>
+        <div class="divider"></div>
 
-    <a href="mailto:rsvp@example.com?subject=Wedding%20RSVP" class="rsvp">RSVP by May 15, 2025</a>
+        <div class="details">
+            <div class="date">Saturday, June 12, 2025 at 4:00 PM</div>
+            <div class="location">Beautiful Wedding Venue<br>123 Celebration Lane<br>Wedding City, WS 12345</div>
+            <p>Reception to follow</p>
+        </div>
 
-    <div class="footer">
-        <p>We look forward to celebrating this special day with you!</p>
-        <div class="hearts">♥</div>
+        <a href="mailto:rsvp@example.com?subject=Wedding%20RSVP" class="rsvp">RSVP by May 15, 2025</a>
+
+        <div class="footer">
+            <p>We look forward to celebrating this special day with you!</p>
+            <div class="hearts">♥</div>
+        </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

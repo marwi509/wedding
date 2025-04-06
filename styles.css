@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f5;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Password Section Styles */
+#passwordSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#passwordInput {
+    padding: 10px;
+    margin: 20px 0;
+    width: 250px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submitPassword {
+    padding: 10px 20px;
+    background-color: #8e7cc3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#submitPassword:hover {
+    background-color: #6d5aa3;
+}
+
+/* Invitation Styles - Initially Hidden */
+.invitation {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #8e7cc3;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #b19cd9;
+}
+
+.names {
+    font-size: 2.2rem;
+    margin: 30px 0;
+    color: #8e7cc3;
+}
+
+.accent {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #b19cd9;
+}
+
+.details {
+    margin: 40px 0;
+    line-height: 2;
+}
+
+.date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #8e7cc3;
+}
+
+.location {
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+
+.rsvp {
+    margin: 40px 0 20px;
+    padding: 15px 30px;
+    background-color: #8e7cc3;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.rsvp:hover {
+    background-color: #6d5aa3;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.hearts {
+    font-size: 2rem;
+    color: #b19cd9;
+    margin: 20px 0;
+}
+
+.divider {
+    width: 60%;
+    margin: 30px auto;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .names {
+        font-size: 1.8rem;
+    }
+}
