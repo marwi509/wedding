@@ -27,7 +27,7 @@ async function checkPassword() {
     try {
         // This is where you'll put your bcrypt hash
         // Example hash for password "wedding2025" - replace with your own!
-        const storedHash = '$2y$10$s8sJt9EbUOhVXyxOdIBxX.v/OmIJY4y7FcVdjWUJ8kSZD9Gnz9z9S';
+        const storedHash = '$2a$10$eB3Z3pM69OQ4pB5CK.m2MeydzBZB3vSKI9y3JMh0LiM9XPWujQx4q';
 
         // Use bcrypt.js to compare the entered password with the stored hash
         const isMatch = await bcrypt.compare(password, storedHash);
