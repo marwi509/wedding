@@ -10,7 +10,7 @@ const translations = {
     joinUs: "Please join us to celebrate our wedding",
     ceremony: "Ceremony",
     reception: "Reception",
-    rsvpPrefix: "RSVP by",
+    rsvpPrefix: "RSVP by 12 May 2025",
     lookForward: "We look forward to celebrating this special day with you!"
   },
   sv: {
@@ -23,7 +23,7 @@ const translations = {
     joinUs: "Vi bjuder in er att fira vårt bröllop",
     ceremony: "Vigsel",
     reception: "Bröllopsfest",
-    rsvpPrefix: "OSA senast",
+    rsvpPrefix: "OSA senast 12 Maj 2025",
     lookForward: "Vi ser fram emot att fira denna speciella dag med er!"
   }
 };

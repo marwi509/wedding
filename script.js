@@ -302,9 +302,7 @@ function showInvitation() {
 
   // Update RSVP text but keep the date
   const rsvpElement = document.querySelector('.rsvp');
-  const rsvpDate = rsvpElement.textContent.split('RSVP by ')[1] ||
-                  rsvpElement.textContent.split('OSA senast ')[1];
-  rsvpElement.textContent = `${translations[currentLang].rsvpPrefix} ${rsvpDate}`;
+  rsvpElement.textContent = translations[currentLang].rsvpPrefix;
 }
 
 async function generateHash(password, saltRounds = 10) {
