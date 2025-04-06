@@ -163,7 +163,6 @@ async function checkPassword(password) {
 function populateInvitation(data) {
 
   console.log("populating data")
-  console.log(data)
 
   // Names
   document.querySelector('.names').innerHTML = `
