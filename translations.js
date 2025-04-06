@@ -11,7 +11,10 @@ const translations = {
     ceremony: "Ceremony",
     reception: "Reception",
     rsvpPrefix: "RSVP by 12 May 2025",
-    lookForward: "We look forward to celebrating this special day with you!"
+    lookForward: "We look forward to celebrating this special day with you!",
+    accommodationBtn: "Accommodation",
+    accommodationTitle: "Suggested Accommodations",
+    viewMap: "View on Map"
   },
   sv: {
     passwordPrompt: "Bröllopsinbjudan",
@@ -24,6 +27,9 @@ const translations = {
     ceremony: "Vigsel",
     reception: "Bröllopsfest",
     rsvpPrefix: "OSA senast 12 Maj 2025",
-    lookForward: "Vi ser fram emot att fira denna speciella dag med er!"
+    lookForward: "Vi ser fram emot att fira denna speciella dag med er!",
+    accommodationBtn: "Boende",
+    accommodationTitle: "Förslag på boende",
+    viewMap: "Visa på karta"
   }
 };
