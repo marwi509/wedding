@@ -225,7 +225,6 @@ function initAccommodations(accommodations) {
   accommodations.forEach(hotel => {
     const hotelCard = document.createElement('div');
     hotelCard.className = 'hotel-card';
-    const viewOnMap = currentLang === "en" ? translations.en.viewMap : translations.sv.viewMap
 
     hotelCard.innerHTML = `
       <div class="hotel-name">
@@ -237,8 +236,8 @@ function initAccommodations(accommodations) {
       </div>
       <div class="hotel-map">
         <a href="${hotel.mapLink}" target="_blank">
-          <span class="en">${viewOnMap}</span>
-          <span class="sv">${viewOnMap}</span>
+          <span class="en">${translations.en.viewMap}</span>
+          <span class="sv">${translations.sv.viewMap}</span>
         </a>
       </div>
     `;
@@ -309,10 +308,21 @@ function applyTranslations() {
   document.querySelector('#passwordSection p').textContent = translations[currentLang].enterPassword;
   document.getElementById('submitPassword').textContent = translations[currentLang].submit;
 
-  // Update accommodation button text if it exists (might not be visible yet)
-  const accommodationTitle = document.querySelector('.accommodation-title');
-  if (accommodationTitle) {
-    accommodationTitle.textContent = translations[currentLang].accommodationTitle;
+  // Update accommodation texts if elements exist
+  if (document.getElementById('accommodationBtnText')) {
+    document.getElementById('accommodationBtnText').textContent = translations[currentLang].accommodationBtn;
+  }
+
+  if (document.getElementById('accommodationTitle')) {
+    document.getElementById('accommodationTitle').textContent = translations[currentLang].accommodationTitle;
+  }
+
+  // Update "View on Map" text for all hotel cards if they exist
+  const mapLinks = document.querySelectorAll('.hotel-map a');
+  if (mapLinks.length > 0) {
+    mapLinks.forEach(link => {
+      link.textContent = translations[currentLang].viewMap;
+    });
   }
 }
 
