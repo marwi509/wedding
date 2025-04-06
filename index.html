@@ -19,10 +19,19 @@
 <div class="invitation">
     <div class="container">
         <header>
-            <h1>We're Getting Married</h1>
+            <h1 class="wedding-title">We're Getting Married</h1>
             <div class="hearts">♥ ♥ ♥</div>
-            <h2>Please join us to celebrate our wedding</h2>
+            <h2 class="join-us">Please join us to celebrate our wedding</h2>
         </header>
+
+        <div class="image-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slides"></div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
 
         <div class="names">
             <span class="accent">Name One</span>
@@ -33,21 +42,38 @@
         <div class="divider"></div>
 
         <div class="details">
-            <div class="date">Saturday, June 12, 2025 at 4:00 PM</div>
-            <div class="location">Beautiful Wedding Venue<br>123 Celebration Lane<br>Wedding City, WS 12345</div>
-            <p>Reception to follow</p>
+            <div class="ceremony">
+                <h3 class="ceremony-title">Ceremony</h3>
+                <div class="ceremony-date">Saturday, June 12, 2025 at 3:00 PM</div>
+                <div class="ceremony-location">Beautiful Wedding Chapel<br>123 Ceremony Lane<br>Wedding City, WS 12345</div>
+            </div>
+
+            <div class="divider small"></div>
+
+            <div class="reception">
+                <h3 class="reception-title">Reception</h3>
+                <div class="reception-date">Saturday, June 12, 2025 at 5:00 PM</div>
+                <div class="reception-location">Elegant Reception Venue<br>456 Celebration Blvd<br>Wedding City, WS 12345</div>
+            </div>
         </div>
 
         <a href="mailto:rsvp@example.com?subject=Wedding%20RSVP" class="rsvp">RSVP by May 15, 2025</a>
 
         <div class="footer">
-            <p>We look forward to celebrating this special day with you!</p>
+            <p class="footer-text">We look forward to celebrating this special day with you!</p>
             <div class="hearts">♥</div>
         </div>
     </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+<script src="translations.js"></script>
 <script src="script.js"></script>
+
+<!-- Language switcher -->
+<div class="language-switcher">
+    <a href="?lang=en" class="lang-btn" data-lang="en">🇬🇧 EN</a>
+    <a href="?lang=sv" class="lang-btn" data-lang="sv">🇸🇪 SV</a>
+</div>
 </body>
 </html>

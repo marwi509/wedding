@@ -95,14 +95,25 @@ h2 {
     line-height: 2;
 }
 
-.date {
+.ceremony, .reception {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #8e7cc3;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.ceremony-date, .reception-date {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 15px 0;
+    margin: 10px 0;
     color: #8e7cc3;
 }
 
-.location {
+.ceremony-location, .reception-location {
     margin: 15px 0;
     font-size: 1.3rem;
 }
@@ -141,6 +152,11 @@ h2 {
     border-top: 1px solid #eee;
 }
 
+.divider.small {
+    width: 40%;
+    margin: 20px auto;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -153,4 +169,98 @@ h2 {
     .names {
         font-size: 1.8rem;
     }
+}
+
+/* Language switcher */
+.language-switcher {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #8e7cc3;
+    font-weight: bold;
+}
+
+/* Add this to your styles.css */
+.image-carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: none; /* Hidden by default until images are loaded */
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  aspect-ratio: 4/3; /* Maintain consistent height */
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #8e7cc3;
 }
