@@ -177,7 +177,7 @@ function populateInvitation(data) {
     ceremonyDate = ceremonyDate.replace("Juli", "July")
   }
 
-  let receptionDate = data.date.replace(/\n/g, '<br>')
+  let receptionDate = data.receptionDate.replace(/\n/g, '<br>')
     if (currentLang === 'en') {
       receptionDate = receptionDate.replace("Juli", "July")
     }
@@ -288,7 +288,7 @@ function showInvitation() {
     if (currentLang === 'en') {
       document.querySelector('h2.join-us').textContent = 'Please join us for our wedding reception';
     } else if (currentLang === 'sv') {
-      document.querySelector('h2.join-us').textContent = 'Vi inbjuder er till vår bröllopsfest';
+      document.querySelector('h2.join-us').textContent = 'Vi bjuder in er till vår bröllopsfest';
     }
   } else {
     // Show ceremony section for full invitation
