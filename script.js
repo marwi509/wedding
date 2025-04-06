@@ -235,9 +235,8 @@ function initAccommodations(accommodations) {
         <div>${hotel.phoneNumber}</div>
       </div>
       <div class="hotel-map">
-        <a href="${hotel.mapLink}" target="_blank">
-          <span class="en">${translations.en.viewMap}</span>
-          <span class="sv">${translations.sv.viewMap}</span>
+        <a href="${hotel.mapLink}" target="_blank" class="map-link">
+          ${translations[currentLang].viewMap}
         </a>
       </div>
     `;
