@@ -222,7 +222,7 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.0);
   border: none;
   width: 40px;
   height: 40px;
@@ -231,10 +231,12 @@ h3 {
   cursor: pointer;
   z-index: 10;
   transition: background 0.3s;
+  color: rgba(0,0,0,0.0);
 }
 
 .carousel-btn:hover {
   background: rgba(255,255,255,0.9);
+  color: rgba(0,0,0,0.5);
 }
 
 .prev-btn {
